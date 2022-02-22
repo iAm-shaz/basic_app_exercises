@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> {% load static %}
 <html>
 
 <head>
@@ -6,10 +6,12 @@
     <title>
         first app
     </title>
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
 
     <body>
-        <h1>hello this is the template link</h1>
-        {{ insert_me }}
+        <h1>hello this is image of DJANGO</h1>
+        <img src="{% static 'images/django.jpeg' %}" alt="ops!!">
+
     </body>
 </head>
 
