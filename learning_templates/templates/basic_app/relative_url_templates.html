@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Relative Page</title>
-</head>
-
-<body>
-    <h1>Welcome to the Relative page</h1>
-    <a href="{% url 'basic_app:other' %}">This will take you to otherPage</a> <br>
-    <a href="{% url 'admin:index' %}"> Admin URL</a><br>
-    <a href="{% url 'index' %}">Index URL</a>
-</body>
-
-</html>
+<!DOCTYPE html> {% extends 'basic_app/base.html' %} {% block body_block%}
+<h1>Welcome to the Relative page</h1>
+<a href="{% url 'basic_app:other' %}">This will take you to otherPage</a> <br>
+<a href="{% url 'admin:index' %}"> Admin URL</a><br>
+<a href="{% url 'index' %}">Index URL</a> {% endblock %}
